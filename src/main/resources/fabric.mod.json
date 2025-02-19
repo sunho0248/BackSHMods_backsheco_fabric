@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "backsheco",
+	"version": "${version}",
+	"name": "Backsheco",
+	"description": "Sunho's economy mod",
+	"authors": [
+		"Back Sunho"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/backsheco/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.backsunho.backsheco.Backsheco"
+		],
+		"fabric-datagen": [
+			"net.backsunho.backsheco.BackshecoDataGenerator"
+		]
+	},
+	"mixins": [
+		"backsheco.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
